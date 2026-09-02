@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-username>/cmp-k8s-labs.git
+    repoURL: https://github.com/hieuduong1810/cmp-k8s-labs.git
     targetRevision: part-1
     path: deploy/base
   destination:

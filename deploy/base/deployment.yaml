@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: duonghieu1810/demo-app:tag-does-not-exist
+          image: duonghieu1810/demo-app:191e52010e8d
           ports:
             - name: http
               containerPort: 8080

@@ -14,27 +14,27 @@ spec:
         app.kubernetes.io/name: nginx
     spec:
       containers:
-      - name: nginx
-        image: duonghieu1810/demo-app:09cbfe60cef5
-        ports:
-          - name: http
-            containerPort: 8080
-        readinessProbe:
-          httpGet:
-            path: /
-            port: http
-          initialDelaySeconds: 2
-          periodSeconds: 5
-        livenessProbe:
-          httpGet:
-            path: /
-            port: http
-          initialDelaySeconds: 10
-          periodSeconds: 10
-        resources:
-          requests:
-            cpu: 50m
-            memory: 32Mi
-          limits:
-            cpu: 200m
-            memory: 128Mi
+        - name: nginx
+          image: duonghieu1810/demo-app:191e52010e8d
+          ports:
+            - name: http
+              containerPort: 8080
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 2
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          resources:
+            requests:
+              cpu: 50m
+              memory: 32Mi
+            limits:
+              cpu: 200m
+              memory: 128Mi
